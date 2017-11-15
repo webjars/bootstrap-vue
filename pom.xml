@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>bootstrap-vue</artifactId>
-    <version>0.9.6-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
     <name>bootstrap-vue</name>
     <description>WebJar for bootstrap-vue</description>
     <url>http://webjars.org</url>
