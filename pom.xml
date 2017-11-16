@@ -11,14 +11,14 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>bootstrap-vue</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.2-1-SNAPSHOT</version>
     <name>bootstrap-vue</name>
     <description>WebJar for bootstrap-vue</description>
     <url>http://webjars.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.url>https://unpkg.com/bootstrap-vue@${version.unsnapshot}/dist</upstream.url>
+        <upstream.url>https://unpkg.com/bootstrap-vue@${version.unrevise}/dist</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
             {
@@ -93,8 +93,17 @@
                                 <echo message="download files" />
                                 <get src="${upstream.url}/bootstrap-vue.common.js" dest="${destDir}" />
                                 <get src="${upstream.url}/bootstrap-vue.common.js.map" dest="${destDir}" />
+                                <get src="${upstream.url}/bootstrap-vue.common.min.js" dest="${destDir}" />
+                                <get src="${upstream.url}/bootstrap-vue.common.min.js.map" dest="${destDir}" />
+                                <get src="${upstream.url}/bootstrap-vue.css" dest="${destDir}" />
+                                <get src="${upstream.url}/bootstrap-vue.esm.js" dest="${destDir}" />
+                                <get src="${upstream.url}/bootstrap-vue.esm.js.map" dest="${destDir}" />
+                                <get src="${upstream.url}/bootstrap-vue.esm.min.js" dest="${destDir}" />
+                                <get src="${upstream.url}/bootstrap-vue.esm.min.js.map" dest="${destDir}" />
                                 <get src="${upstream.url}/bootstrap-vue.js" dest="${destDir}" />
                                 <get src="${upstream.url}/bootstrap-vue.js.map" dest="${destDir}" />
+                                <get src="${upstream.url}/bootstrap-vue.min.js" dest="${destDir}" />
+                                <get src="${upstream.url}/bootstrap-vue.min.js.map" dest="${destDir}" />
                             </target>
                         </configuration>
                     </execution>
